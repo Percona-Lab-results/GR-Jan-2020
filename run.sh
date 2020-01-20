@@ -1,4 +1,4 @@
-RUNDIR=res-tpcc-GR-slv1-`date +%F-%H-%M`
+RUNDIR=res-tpcc-GR-slv16-BP20-`date +%F-%H-%M`
 runid="1"
 for i in 1 2 4 8 16 64 128 256
 do
