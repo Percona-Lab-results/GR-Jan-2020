@@ -1,0 +1,22 @@
+sysbench 1.0.19 (using bundled LuaJIT 2.1.0-beta2)
+
+Running the test with following options:
+Number of threads: 8
+Report intermediate results every 1 second(s)
+Initializing random number generator from current time
+
+
+Initializing worker threads...
+
+Threads started!
+
+1,8,358.32,10162.79,4624.26,4797.93,740.60,17.01,1.00,0.00
+2,8,484.08,13474.20,6159.01,6354.04,961.16,16.12,3.00,0.00
+3,8,462.04,13090.16,5937.52,6221.55,931.08,16.12,2.00,0.00
+4,8,175.00,4551.99,2058.99,2143.99,349.00,344.08,1.00,0.00
+5,8,236.00,6629.92,3022.96,3134.96,471.99,308.84,0.00,0.00
+6,8,372.98,11407.39,5204.72,5459.71,742.96,16.12,2.00,0.00
+7,8,232.03,7093.77,3243.35,3387.37,463.05,308.84,0.00,0.00
+8,8,490.97,13776.21,6264.64,6528.63,982.94,15.27,0.00,0.00
+FATAL: mysql_drv_query() returned error 3101 (Plugin instructed the server to rollback the current transaction.) for query 'COMMIT'
+FATAL: `thread_run' function failed: ./tpcc_run.lua:408: SQL error, errno = 3101, state = '40000': Plugin instructed the server to rollback the current transaction.

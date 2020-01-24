@@ -1,0 +1,20 @@
+sysbench 1.0.19 (using bundled LuaJIT 2.1.0-beta2)
+
+Running the test with following options:
+Number of threads: 16
+Report intermediate results every 1 second(s)
+Initializing random number generator from current time
+
+
+Initializing worker threads...
+
+Threads started!
+
+1,16,721.70,20357.30,9246.33,9625.65,1485.32,17.01,2.99,0.00
+2,16,236.03,7228.87,3314.40,3451.41,463.06,356.70,1.00,0.00
+3,16,189.99,5120.78,2333.90,2404.90,381.98,601.29,0.00,0.00
+4,16,280.01,8057.34,3671.15,3815.16,571.02,308.84,3.00,0.00
+FATAL: mysql_drv_query() returned error 1180 (Got error 149 - 'Lock deadlock; Retry transaction' during COMMIT) for query 'UPDATE warehouse99
+	          SET w_ytd = w_ytd + 1719 
+	        WHERE w_id = 7'
+FATAL: `thread_run' function failed: ./tpcc_run.lua:258: SQL error, errno = 1180, state = 'HY000': Got error 149 - 'Lock deadlock; Retry transaction' during COMMIT
